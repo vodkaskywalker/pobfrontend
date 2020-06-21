@@ -1,7 +1,7 @@
 #!/bin/bash
 
 curl -X PATCH -H 'Accept: application/vnd.github.v3+json' \
--H "Authorization: token ${GITHUB_TOKEN}" https://api.github.com/repos/aspel/pobfrontend/releases/22137604 \
+-H "Authorization: token ${GITHUB_TOKEN}" https://api.github.com/repos/bernhardfritz/pobfrontend/releases/27766214 \
 --data @<(cat <<-EOF
 { "tag_name":"PathOfBuilding",
 "target_commitish": "master",
