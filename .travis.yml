@@ -65,5 +65,5 @@ deploy:
   skip_cleanup: true
   target_commitish: $TRAVIS_COMMIT
 
-# after_deploy:
-#   - bash github.sh
+after_deploy:
+  - bash github.sh
