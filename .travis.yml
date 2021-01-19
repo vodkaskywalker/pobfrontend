@@ -43,8 +43,8 @@ before_deploy:
   - export TR_TAG="nightly-$(date +'%Y/%m/%d')"
   - |
     if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
-      git config --local user.name "Bernhard Fritz"
-      git config --local user.email "bernhard.e.fritz@gmail.com"
+      git config --local user.name "vodkaskywalker"
+      git config --local user.email "sistvodkamartini@gmail.com"
       git tag -f PathOfBuilding
       git remote add gh https://${TRAVIS_REPO_SLUG%/*}:${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
       git push -f gh PathOfBuilding
